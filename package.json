@@ -1,0 +1,18 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "dev": "lerna run dev",
+    "test": "lerna run test",
+    "build": "lerna run build",
+    "version": "lerna version"
+  },
+  "devDependencies": {
+    "lerna": "^7.1.4"
+  }
+}
